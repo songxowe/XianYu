@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pjt.xianyu.Product_InfoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/relativeLayout14"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/imageView9"
+            android:src="@drawable/comment_back_normal"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="宝贝详情"
+            android:id="@+id/textView82"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="#c9000000"
+            android:layout_alignTop="@+id/imageView9"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/imageView10"
+            android:src="@drawable/item_detail_share_icon"
+            android:layout_alignBottom="@+id/textView82"
+            android:layout_toLeftOf="@+id/imageView27"
+            android:layout_toStartOf="@+id/imageView27"
+            android:layout_marginRight="20dp"
+            />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/imageView27"
+            android:src="@drawable/ic_more"
+            android:layout_alignTop="@+id/imageView10"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/product_info_jianpan"
+        android:visibility="gone"
+        >
+
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/btn_jianpan"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/key_board_hide"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:id="@+id/textView102"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btn_jianpan"
+            android:layout_toEndOf="@+id/btn_jianpan"
+            android:layout_marginLeft="10dp"
+            android:background="#dadada"
+            />
+
+        <EditText
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:id="@+id/edit_pinglun"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_post_pinglun"
+            android:layout_toRightOf="@+id/textView102"
+            android:layout_toEndOf="@+id/textView102"
+            android:layout_marginLeft="15dp"
+            android:background="@null"
+            android:hint="输入文字信息"
+            android:textSize="14sp"
+            android:textColorHint="#aaaaaa"
+           android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:selectAllOnFocus="true"
+             android:gravity="center_vertical"
+            android:singleLine="true"
+            />
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:text="发送"
+            android:id="@+id/btn_post_pinglun"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="@android:color/white"
+            android:background="@drawable/want_buy_bg"
+            android:layout_marginRight="10dp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/relativeLayout14"
+        android:layout_alignStart="@+id/relativeLayout14"
+        android:id="@+id/procut_info_want"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/product_info_liuyan"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/imageView46"
+                android:src="@drawable/contact_entry"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="留言"
+                android:id="@+id/textView84"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                android:layout_below="@+id/imageView46"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/product_info_liuyan"
+            android:layout_toRightOf="@+id/product_info_liuyan"
+            android:layout_toEndOf="@+id/product_info_liuyan"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/product_info_dianzan">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/img_zan"
+                android:src="@drawable/love_gray"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点赞"
+                android:id="@+id/textView85"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                android:layout_below="@+id/img_zan"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp" />
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:text="我想要"
+            android:id="@+id/btn_want_buy"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="@android:color/white"
+            android:background="@drawable/want_buy_bg"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:id="@+id/textView83"
+        android:layout_below="@+id/relativeLayout14"
+        android:layout_alignLeft="@+id/relativeLayout14"
+        android:layout_alignStart="@+id/relativeLayout14"
+        android:background="#dadada"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:id="@+id/textView86"
+        android:background="#dadada"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="46dp"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/product_info_listview"
+        android:layout_below="@+id/textView83"
+        android:layout_alignLeft="@+id/textView83"
+        android:layout_alignStart="@+id/textView83"
+        android:layout_marginBottom="45dp"
+        android:dividerHeight="1px"
+        android:divider="#dadada"
+        android:scrollbars="none"
+        />
+
+</RelativeLayout>

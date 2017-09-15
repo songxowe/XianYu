@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
+
+    <com.pjt.xianyu.CircleImageView
+        android:id="@+id/user_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/head5"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="绵绵多"
+        android:id="@+id/user_name"
+        android:layout_alignTop="@+id/user_img"
+        android:layout_toRightOf="@+id/user_img"
+        android:layout_toEndOf="@+id/user_img"
+        android:textColor="#000000"
+        android:layout_marginLeft="10dp"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_comment"
+        android:layout_below="@+id/user_name"
+        android:layout_alignLeft="@+id/user_name"
+        android:layout_alignStart="@+id/user_name"
+        android:text="回复@陆先生：可以单出"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6小时前"
+        android:id="@+id/comment_time"
+        android:layout_alignBottom="@+id/user_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="12sp"
+        android:textColor="@android:color/darker_gray"
+        />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffda68</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="setbg">#dadada</color>
+    <color name="tabbg">#ffda68</color>
+    <color name="citycolor">#ebebeb</color>
+</resources>

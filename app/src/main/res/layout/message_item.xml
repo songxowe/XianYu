@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+
+    >
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/message_img"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/message_icon_03"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="留言"
+        android:id="@+id/message_title"
+        android:layout_alignTop="@+id/message_img"
+        android:layout_toRightOf="@+id/message_img"
+        android:layout_toEndOf="@+id/message_img"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="还没有留言哦"
+        android:id="@+id/message_info"
+        android:layout_below="@+id/message_title"
+        android:layout_alignLeft="@+id/message_title"
+        android:layout_alignStart="@+id/message_title"
+        android:layout_marginTop="5dp"
+        />
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageView26"
+        android:src="@drawable/arrow_right"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/message_state"
+        android:layout_alignTop="@+id/message_title"
+        android:layout_toRightOf="@+id/message_title"
+        android:layout_toEndOf="@+id/message_title"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ff0000"
+        android:textSize="12sp"
+        />
+</RelativeLayout>

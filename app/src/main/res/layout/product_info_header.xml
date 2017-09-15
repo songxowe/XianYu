@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout15"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/p_info_userimg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/head5" />
+
+        <TextView
+            android:id="@+id/p_info_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/p_info_userimg"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/p_info_userimg"
+            android:layout_toRightOf="@+id/p_info_userimg"
+            android:text="xiaohongmei1129"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/p_info_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/p_info_userimg"
+            android:layout_alignLeft="@+id/p_info_username"
+            android:layout_alignStart="@+id/p_info_username"
+            android:text="1小时" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="一口价"
+        android:id="@+id/p_info_type"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥10"
+        android:id="@+id/p_info_price"
+        android:layout_alignBottom="@+id/relativeLayout15"
+        android:layout_alignLeft="@+id/p_info_type"
+        android:layout_alignStart="@+id/p_info_type"
+        android:textColor="@android:color/holo_red_light"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="秋水伊人全新剪标，批发单买都可以，全部都是正品剪标，专柜撤柜货"
+        android:id="@+id/p_info_p_info"
+        android:layout_below="@+id/relativeLayout15"
+        android:layout_alignLeft="@+id/relativeLayout15"
+        android:layout_alignStart="@+id/relativeLayout15"
+        android:layout_toLeftOf="@+id/p_info_price"
+        android:layout_toStartOf="@+id/p_info_price"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        />
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:id="@+id/imageView49"
+        android:src="@drawable/post_location_icon_blue"
+        android:layout_below="@+id/p_info_p_info"
+        android:layout_alignLeft="@+id/p_info_p_info"
+        android:layout_alignStart="@+id/p_info_p_info"
+        android:layout_marginTop="23dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="来自芜湖"
+        android:id="@+id/p_info_location"
+        android:gravity="center"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="12sp"
+        android:layout_alignTop="@+id/imageView49"
+        android:layout_toRightOf="@+id/imageView49"
+        android:layout_toEndOf="@+id/imageView49"
+        android:layout_marginLeft="10dp"
+        />
+
+    <com.pjt.xianyu.NoScrollListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/product_header_listview"
+        android:layout_below="@+id/imageView49"
+        android:layout_alignLeft="@+id/imageView49"
+        android:layout_alignStart="@+id/imageView49"
+        android:layout_marginRight="10dp"
+        android:scrollbars="none"
+        android:layout_marginTop="10dp"
+        android:divider="@android:color/white"
+        android:dividerHeight="10dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/relativeLayout17"
+        android:layout_below="@+id/textView93"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <com.pjt.xianyu.LovePersonView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/product_info_love"
+            android:layout_toLeftOf="@+id/p_info_goodcount"
+            android:layout_toStartOf="@+id/p_info_goodcount" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7人点赞"
+            android:id="@+id/p_info_goodcount"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="12sp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/p_info_lookcount"
+            android:layout_toStartOf="@+id/p_info_lookcount"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="132人浏览"
+            android:id="@+id/p_info_lookcount"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:textSize="12sp"
+            android:textColor="@android:color/darker_gray"
+            />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:id="@+id/textView93"
+        android:background="#dadada"
+        android:layout_below="@+id/product_header_listview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:id="@+id/textView96"
+        android:background="#66dadada"
+        android:layout_below="@+id/relativeLayout17"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/relativeLayout18"
+        android:layout_below="@+id/textView96"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="热门留言(0)"
+            android:id="@+id/comment_count"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:id="@+id/textView98"
+        android:background="#dadada"
+        android:layout_below="@+id/relativeLayout18"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/relativeLayout18"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/comment_empty_view">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageView50"
+            android:src="@drawable/comment_empty"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="还没有人评论，还不快来抢沙发"
+            android:id="@+id/textView99"
+            android:layout_below="@+id/imageView50"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/darker_gray"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

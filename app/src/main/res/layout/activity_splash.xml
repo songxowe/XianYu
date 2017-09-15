@@ -1,0 +1,63 @@
+<?xml version= "1.0" encoding ="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width= "match_parent"
+        android:layout_height= "match_parent"
+        tools:context="com.newer.test.SplashActivity">
+
+        <FrameLayout
+            android:layout_width= "match_parent"
+            android:layout_height="match_parent"
+            android:background= "#ffffffff"
+            >
+            <android.support.v4.view.ViewPager
+                android:id="@+id/splash_viewpager"
+                android:layout_width= "match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <!-- 假设导航页有5页 -->
+            <!-- 下面这里是设置五个导航点指示 -->
+            <LinearLayout
+                android:layout_width= "wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation= "horizontal"
+                android:layout_gravity="center|bottom"
+                android:gravity= "center"
+                android:layout_marginBottom="45dp"
+                >
+                <ImageView
+                    android:id= "@+id/dot_01"
+                    android:layout_width= "0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:src= "@drawable/wihte_circle"
+                    android:layout_margin="4dp"
+                    />
+                <ImageView
+                    android:id= "@+id/dot_02"
+                    android:layout_width= "0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:src= "@drawable/gray_circle"
+                    android:layout_margin="4dp"
+                    />
+                <ImageView
+                    android:id= "@+id/dot_03"
+                    android:layout_width= "0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:src= "@drawable/gray_circle"
+                    android:layout_margin="4dp"
+                    />
+                <ImageView
+                    android:id= "@+id/dot_04"
+                    android:layout_width= "0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:src= "@drawable/gray_circle"
+                    android:layout_margin="4dp"
+                    />
+            </LinearLayout >
+        </FrameLayout >
+    </RelativeLayout>

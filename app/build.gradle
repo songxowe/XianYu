@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "com.pjt.xianyu"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile files('libs/gradle-wrapper.jar')
+    compile files('libs/AMap_Services_V2.3.0.jar')
+    compile files('libs/Android_Location_V1.3.0.jar')
+    compile files('libs/Android_Map_V2.7.20151124.jar')
+    compile files('libs/Volley.jar')
+    compile files('libs/gson-2.5.jar')
+    compile files('libs/gson-2.5-sources.jar')
+    compile files('libs/gson-2.5-javadoc.jar')
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:support-v4:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.jude:rollviewpager:1.2.9'
+}

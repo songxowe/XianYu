@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@android:color/white"
+    >
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/relativeLayout4"
+        android:layout_marginLeft="10dp"
+        >
+
+        <com.pjt.xianyu.CircleImageView
+            android:id="@+id/main_user_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/head5" />
+
+        <TextView
+            android:id="@+id/main_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/main_user_img"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/main_user_img"
+            android:layout_toRightOf="@+id/main_user_img"
+            android:text="xiaohongmei1129"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/main_user_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1小时"
+            android:layout_below="@+id/main_user_name"
+            android:layout_alignLeft="@+id/main_user_name"
+            android:layout_alignStart="@+id/main_user_name"
+            android:layout_marginTop="5dp"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥1522"
+        android:id="@+id/main_user_price"
+        android:layout_alignTop="@+id/relativeLayout4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ff0000"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/horizontalScrollView"
+        android:layout_below="@+id/relativeLayout4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:fillViewport="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/main_gridView"
+                android:scrollbars="none"
+                android:listSelector="@android:color/transparent"
+                android:horizontalSpacing="10dp"
+                />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="大排量本田。。。cbr 特技车懂的来m，八成新，限当面交易"
+        android:id="@+id/main_text_info"
+        android:layout_below="@+id/horizontalScrollView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:id="@+id/textView38"
+        android:layout_below="@+id/main_text_info"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:background="#dadada"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/textView38"
+        android:layout_alignLeft="@+id/textView38"
+        android:layout_alignStart="@+id/textView38"
+        android:id="@+id/relativeLayout5">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:id="@+id/imageView17"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/post_location_icon_blue"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="来自芜湖"
+            android:id="@+id/main_text_location"
+            android:layout_alignTop="@+id/imageView17"
+            android:layout_toRightOf="@+id/imageView17"
+            android:layout_toEndOf="@+id/imageView17"
+            android:layout_alignBottom="@+id/imageView17"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="12sp"
+            />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:id="@+id/imageView18"
+            android:layout_marginRight="109dp"
+            android:layout_marginEnd="109dp"
+            android:src="@drawable/contact_entry"
+            android:layout_alignTop="@+id/main_text_location"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="98"
+            android:id="@+id/main_comment"
+            android:layout_marginLeft="23dp"
+            android:layout_marginStart="23dp"
+            android:layout_alignTop="@+id/imageView18"
+            android:layout_alignLeft="@+id/imageView18"
+            android:layout_alignStart="@+id/imageView18" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:id="@+id/imageView19"
+            android:src="@drawable/love_gray_small"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_alignTop="@+id/main_comment"
+            android:layout_toRightOf="@+id/main_comment"
+            android:layout_toEndOf="@+id/main_comment" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123"
+            android:id="@+id/main_good"
+            android:layout_alignTop="@+id/imageView19"
+            android:layout_toRightOf="@+id/imageView19"
+            android:layout_toEndOf="@+id/imageView19"
+            android:layout_marginLeft="5dp"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:id="@+id/textView34"
+        android:layout_below="@+id/relativeLayout5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#66dadada"
+        />
+
+</RelativeLayout>

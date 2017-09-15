@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pjt.xianyu.PostActivity"
+    >
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r_paizhao"
+            android:layout_above="@+id/post_finsh"
+            android:layout_toLeftOf="@+id/post_finsh"
+            android:layout_toStartOf="@+id/post_finsh"
+            android:layout_marginBottom="68dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/paizhao"
+                android:src="@drawable/publish_entry_with_photo"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拍照"
+                android:id="@+id/textView81"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/paizhao"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r_zhuanmai"
+            android:layout_alignTop="@+id/r_paizhao"
+            android:layout_toRightOf="@+id/post_finsh"
+            android:layout_toEndOf="@+id/post_finsh">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/zhuanmai"
+                android:src="@drawable/publish_entry_resale"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="淘宝一键转卖"
+                android:id="@+id/textView61"
+                android:layout_below="@+id/zhuanmai"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="10dp"
+                />
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/post_finsh"
+            android:src="@drawable/comui_tab_post"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

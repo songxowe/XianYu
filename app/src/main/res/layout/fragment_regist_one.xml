@@ -1,0 +1,255 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pjt.xianyu.Regist_oneFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/relativeLayout22"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/imageView22"
+            android:src="@drawable/title_back"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快速注册"
+            android:id="@+id/textView40"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="#c9000000"
+            android:layout_alignBottom="@+id/imageView22"
+            android:layout_toRightOf="@+id/imageView22"
+            android:layout_toEndOf="@+id/imageView22"
+            android:layout_alignTop="@+id/imageView22" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:id="@+id/textView42"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/relativeLayout22"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="#55dadada"
+        android:layout_below="@+id/textView42"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="下一步"
+            android:id="@+id/btn_next"
+            android:layout_below="@+id/relativeLayout30"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:textSize="16sp"
+            android:background="@drawable/btn_login_bg_press"
+            android:textColor="#a6000000" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/login_bg"
+            android:id="@+id/relativeLayout30"
+            android:layout_marginTop="10dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignBottom="@+id/textView44" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="国家地区"
+                    android:id="@+id/textView45"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18sp" />
+
+                <Button
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:id="@+id/button5"
+                    android:background="@drawable/del_icon"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="gone"
+                    android:layout_alignTop="@+id/textView45" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="中国大陆 +86"
+                    android:id="@+id/textView52"
+                    android:textSize="18sp"
+                    android:layout_alignBottom="@+id/imageView23"
+                    android:layout_toLeftOf="@+id/imageView23"
+                    android:layout_toStartOf="@+id/imageView23" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageView23"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/arrow_right"
+                    android:layout_marginRight="10dp"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/textView44"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="#dadada" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView44"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" >
+
+                <Button
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:id="@+id/button6"
+                    android:background="@drawable/del_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/edit_phone"
+                    android:layout_toEndOf="@+id/edit_phone"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edit_phone"
+                    android:background="@null"
+                    android:layout_marginLeft="100dp"
+                    android:layout_alignTop="@+id/textView47"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:maxLength="11" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="手机号"
+                    android:id="@+id/textView47"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册即视为同意"
+            android:id="@+id/textView49"
+            android:layout_below="@+id/btn_next"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="淘宝服务协议"
+            android:id="@+id/textView51"
+            android:textSize="15sp"
+            android:layout_alignBottom="@+id/textView49"
+            android:layout_toRightOf="@+id/textView49"
+            android:layout_toEndOf="@+id/textView49"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="和"
+            android:id="@+id/textView100"
+            android:textSize="15sp"
+            android:layout_alignBottom="@+id/textView51"
+            android:layout_toRightOf="@+id/textView51"
+            android:layout_toEndOf="@+id/textView51" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付宝协议，"
+            android:id="@+id/textView105"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:layout_alignBottom="@+id/textView100"
+            android:layout_toRightOf="@+id/textView100"
+            android:layout_toEndOf="@+id/textView100" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="系统"
+            android:id="@+id/textView106"
+            android:textSize="15sp"
+            android:layout_alignBottom="@+id/textView105"
+            android:layout_toRightOf="@+id/textView105"
+            android:layout_toEndOf="@+id/textView105" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="将同步为您创建支付宝账户"
+            android:id="@+id/textView107"
+            android:textSize="15sp"
+            android:layout_below="@+id/textView49"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="XianYuService"
+  id="myeclipse.1464048111946"
+  context-root="/XianYuService"
+  j2ee-spec="5.0"
+  archive="XianYuService.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

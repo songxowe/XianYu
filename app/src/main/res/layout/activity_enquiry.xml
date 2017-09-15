@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pjt.xianyu.EnquiryActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/relativeLayout16"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/imageView52"
+            android:src="@drawable/comment_back_normal"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="漫西"
+            android:id="@+id/p_user_name"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="#c9000000"
+            android:layout_alignTop="@+id/imageView52"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/imageView54"
+            android:src="@drawable/chat_right_button"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:id="@+id/textView101"
+        android:layout_below="@+id/relativeLayout16"
+        android:layout_alignLeft="@+id/relativeLayout16"
+        android:layout_alignStart="@+id/relativeLayout16"
+        android:background="#dadada"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="10dp"
+        android:id="@+id/relativeLayout19"
+        android:layout_below="@+id/textView101"
+        android:layout_alignLeft="@+id/textView101"
+        android:layout_alignStart="@+id/textView101">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/p_img"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/e_5"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥ 60.00"
+            android:id="@+id/p_price"
+            android:layout_alignTop="@+id/p_img"
+            android:layout_toRightOf="@+id/p_img"
+            android:layout_toEndOf="@+id/p_img"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="含运费0.0元"
+            android:id="@+id/p_yunfei"
+            android:layout_below="@+id/p_price"
+            android:layout_alignLeft="@+id/p_price"
+            android:layout_alignStart="@+id/p_price"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="交易前聊一聊"
+            android:id="@+id/textView110"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            android:layout_alignBottom="@+id/p_img"
+            android:layout_alignLeft="@+id/p_yunfei"
+            android:layout_alignStart="@+id/p_yunfei" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:text="立即购买"
+            android:id="@+id/btn_buy"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/want_buy_bg"
+            android:textColor="#ffffff"
+
+            />
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:id="@+id/listView"
+        android:layout_below="@+id/relativeLayout19"
+        android:layout_alignLeft="@+id/relativeLayout19"
+        android:layout_alignStart="@+id/relativeLayout19" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/listView"
+        android:layout_alignStart="@+id/listView">
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@null"
+            android:hint="想对Ta说点什么?"
+            android:textColorHint="#dadada"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            />
+
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/button3"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/message_gv_action_more"
+            android:layout_marginRight="10dp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            />
+
+        <Button
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/button4"
+            android:background="@drawable/face_icon"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/button3"
+            android:layout_toStartOf="@+id/button3"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:id="@+id/textView127"
+            android:background="#dadada"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:id="@+id/textView125"
+        android:layout_below="@+id/relativeLayout19"
+        android:layout_alignLeft="@+id/listView"
+        android:layout_alignStart="@+id/listView"
+        android:background="#dadada"
+        />
+</RelativeLayout>

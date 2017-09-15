@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tab_bg_press"
+    android:layout_margin="0dp"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    >
+
+    <TextView
+        android:id="@+id/tabText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:textColor="#000000"
+        android:text="uigij"
+        android:gravity="center"
+        />
+</RelativeLayout>

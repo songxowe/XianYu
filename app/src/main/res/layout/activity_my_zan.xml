@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pjt.xianyu.MyZanActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/relativeLayout48"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/imageView56"
+            android:src="@drawable/title_back"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收到的赞"
+            android:id="@+id/textView112"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="#c9000000"
+            android:layout_alignTop="@+id/imageView56"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:id="@+id/textView126"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/relativeLayout48"
+        android:layout_alignLeft="@+id/relativeLayout48"
+        android:layout_alignStart="@+id/relativeLayout48" />
+
+    <com.pjt.xianyu.ReFlashListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/zan_listview"
+        android:layout_below="@+id/relativeLayout48"
+        android:layout_alignLeft="@+id/relativeLayout48"
+        android:layout_alignStart="@+id/relativeLayout48" />
+</RelativeLayout>

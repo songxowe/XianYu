@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#66dadada"
+        android:id="@+id/relativeLayout10">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="1px"
+            android:id="@+id/textView55"
+            android:background="@android:color/darker_gray"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/textView56"
+            android:layout_toStartOf="@+id/textView56"
+            android:layout_marginRight="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="鱼塘新鲜事"
+            android:id="@+id/textView56"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="1px"
+            android:id="@+id/textView57"
+            android:background="@android:color/darker_gray"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView56"
+            android:layout_toEndOf="@+id/textView56"
+            android:layout_marginLeft="20dp"
+            />
+    </RelativeLayout>
+
+    <com.pjt.xianyu.NoScrollListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/yutang_footer_listview"
+        android:layout_below="@+id/relativeLayout10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

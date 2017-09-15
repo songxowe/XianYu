@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    >
+
+    <com.pjt.xianyu.CircleImageView
+        android:id="@+id/user_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/default_user_avatar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="qwqwrfsaf"
+        android:id="@+id/user_name"
+        android:layout_alignTop="@+id/user_img"
+        android:layout_toRightOf="@+id/user_img"
+        android:layout_toEndOf="@+id/user_img"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="赞了你的宝贝  |"
+        android:id="@+id/textView137"
+        android:layout_alignBottom="@+id/user_img"
+        android:layout_alignLeft="@+id/user_name"
+        android:layout_alignStart="@+id/user_name"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/darker_gray"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="17天前"
+        android:id="@+id/time"
+        android:layout_alignBottom="@+id/textView137"
+        android:layout_toRightOf="@+id/textView137"
+        android:layout_toEndOf="@+id/textView137"
+        android:layout_marginLeft="5dp"
+        android:textColor="@android:color/darker_gray"
+        />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/p_img"
+        android:layout_alignTop="@+id/user_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/head5"
+        android:scaleType="centerCrop"
+        />
+</RelativeLayout>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pjt.xianyu.PersonCenterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/person_center_r"
+
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/top_img"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/pc"
+            android:scaleType="centerCrop"
+            />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout37"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#00ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:id="@+id/imageView74"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/user_back" />
+
+            <ImageView
+                android:id="@+id/imageView75"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/user_share"
+                android:layout_alignTop="@+id/imageView74"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                />
+
+            <ImageView
+                android:id="@+id/imageView76"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/user_edit"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imageView75"
+                android:layout_toStartOf="@+id/imageView75"
+                android:layout_marginRight="20dp"
+                />
+
+        </RelativeLayout>
+
+        <com.pjt.xianyu.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/user_img"
+            android:src="@drawable/head5"
+            android:layout_below="@+id/relativeLayout37"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/relativeLayout38"
+            android:layout_toStartOf="@+id/relativeLayout38"
+            android:layout_marginRight="1dp"
+            android:background="#45000000"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收到评价0条"
+                android:id="@+id/user_pingjia"
+                android:textColor="@android:color/white"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/relativeLayout38"
+            android:background="#45000000"
+            >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/imageView79"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/alipay_msp_pcredit_logo"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="芝麻信用"
+                android:id="@+id/textView166"
+                android:textColor="@android:color/white"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageView79"
+                android:layout_toEndOf="@+id/imageView79"
+                android:layout_marginLeft="10dp"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="张三"
+            android:id="@+id/user_center_name"
+            android:layout_alignTop="@+id/user_img"
+            android:layout_toRightOf="@+id/user_img"
+            android:layout_toEndOf="@+id/user_img"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/white"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="株洲 | 男"
+            android:id="@+id/address_sex"
+            android:layout_below="@+id/user_center_name"
+            android:layout_alignLeft="@+id/user_center_name"
+            android:layout_alignStart="@+id/user_center_name"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="这家伙很懒，什么都没留下"
+            android:id="@+id/user_info"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/address_sex"
+            android:layout_alignLeft="@+id/address_sex"
+            android:layout_alignStart="@+id/address_sex"
+            android:layout_marginTop="10dp"
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/imageView78"
+            android:src="@drawable/user_person_userinfo_right_icon"
+            android:layout_alignTop="@+id/address_sex"
+            android:layout_alignRight="@+id/relativeLayout38"
+            android:layout_alignEnd="@+id/relativeLayout38"
+            android:layout_marginRight="15dp"
+            />
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/person_center_r"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:padding="10dp"
+            android:background="#66dadada"
+            >
+
+
+            <com.pjt.xianyu.NoScrollListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Mycenter_listview"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:choiceMode="none"
+                android:background="@android:color/white"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

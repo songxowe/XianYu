@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pjt.xianyu.ShopingActivity"
+    android:background="#66dadada"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/relativeLayout20"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        >
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/imageView55"
+            android:src="@drawable/comment_back_normal"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="购买宝贝"
+            android:id="@+id/textView111"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="#c9000000"
+            android:layout_alignTop="@+id/imageView55"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout20"
+        android:layout_alignLeft="@+id/relativeLayout20"
+        android:layout_alignStart="@+id/relativeLayout20"
+        android:id="@+id/relativeLayout21"
+        android:background="@android:color/white"
+        >
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/p_img"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/p_info_footer_09"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="剑网3cos服"
+            android:id="@+id/p_title"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/p_img"
+            android:layout_toEndOf="@+id/p_img"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥20.00"
+            android:id="@+id/p_price"
+            android:layout_below="@+id/p_title"
+            android:layout_alignLeft="@+id/p_title"
+            android:layout_alignStart="@+id/p_title"
+            android:textColor="@android:color/holo_red_light"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:id="@+id/textView114"
+        android:layout_below="@+id/relativeLayout21"
+        android:layout_alignLeft="@+id/relativeLayout21"
+        android:layout_alignStart="@+id/relativeLayout21"
+        android:background="#66dadada"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView114"
+        android:layout_alignLeft="@+id/textView114"
+        android:layout_alignStart="@+id/textView114"
+        android:background="@android:color/white"
+        android:id="@+id/relativeLayout25">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:padding="10dp"
+            android:id="@+id/r_address">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收获地址"
+                android:id="@+id/textView115"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="张三13170326148"
+                android:id="@+id/textView116"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="30dp"
+                />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:id="@+id/imageView57"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/arrow_right"
+                />
+
+            <TextView
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:text="湖南省长沙市芙蓉区定王台街道"
+                android:id="@+id/textView117"
+                android:layout_alignTop="@+id/textView115"
+                android:layout_toLeftOf="@+id/imageView57"
+                android:layout_toStartOf="@+id/imageView57" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:id="@+id/textView118"
+                android:background="#dadada"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="10dp"
+            android:id="@+id/relativeLayout23"
+            android:layout_below="@+id/r_address"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="运费"
+                android:id="@+id/textView119"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:id="@+id/textView122"
+                android:background="#dadada"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="快递"
+                android:id="@+id/textView120"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/textView121"
+                android:layout_toStartOf="@+id/textView121"
+                android:layout_marginRight="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥0.00"
+                android:id="@+id/textView121"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textColor="@android:color/holo_red_light"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="10dp"
+            android:id="@+id/relativeLayout24"
+            android:layout_below="@+id/relativeLayout23"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="实付金额"
+                android:id="@+id/textView123"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥400.00"
+                android:id="@+id/text_money"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textColor="@android:color/holo_red_light" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/relativeLayout25"
+        android:layout_alignStart="@+id/relativeLayout25"
+        android:background="@android:color/white"
+        android:padding="10dp"
+        android:id="@+id/relativeLayout26">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:id="@+id/btn_shop"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/want_buy_bg"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:id="@+id/textView124"
+        android:background="#dadada"
+        android:layout_above="@+id/relativeLayout26"
+        android:layout_alignLeft="@+id/relativeLayout26"
+        android:layout_alignStart="@+id/relativeLayout26" />
+</RelativeLayout>

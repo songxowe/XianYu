@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:id="@+id/info_footer_img"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/p_info_footer_09"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="长歌门cos服"
+        android:id="@+id/info_footer_name"
+        android:layout_below="@+id/info_footer_img"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:maxLength="10"
+        android:ellipsize="end"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥300.00"
+        android:id="@+id/info_footer_price"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="13sp"
+        android:layout_below="@+id/info_footer_name"
+        android:layout_alignLeft="@+id/info_footer_name"
+        android:layout_alignStart="@+id/info_footer_name"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3 赞"
+        android:id="@+id/info_footer_zan"
+        android:layout_below="@+id/info_footer_price"
+        android:layout_alignLeft="@+id/info_footer_price"
+        android:layout_alignStart="@+id/info_footer_price"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 评论"
+        android:id="@+id/info_footer_pinglun"
+        android:textSize="12sp"
+        android:layout_alignBottom="@+id/info_footer_zan"
+        android:layout_toRightOf="@+id/info_footer_zan"
+        android:layout_toEndOf="@+id/info_footer_zan"
+        android:layout_marginLeft="20dp"
+        android:textColor="@android:color/darker_gray"
+        />
+</RelativeLayout>

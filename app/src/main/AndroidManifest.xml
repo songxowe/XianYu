@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pjt.xianyu">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="66c44d0189ba4ee0e5403b5e8b7cf6e0" />
+
+        <activity android:name=".MainActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".CateGoryActivity" />
+        <activity android:name=".Product_InfoActivity" />
+        <activity android:name=".EnquiryActivity" />
+        <activity android:name=".ShopingActivity" />
+        <activity android:name=".PostingActivity" />
+        <activity android:name=".YuTangActivity" />
+        <activity android:name=".PersonCenterActivity" />
+        <activity android:name=".ProductListActivity" />
+        <activity android:name=".SetingActivity" />
+        <activity android:name=".RegistActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".MessageService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".MyZanActivity" />
+        <activity android:name=".MyCommentActivity"></activity>
+    </application>
+
+</manifest>

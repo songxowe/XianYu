@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pjt.xianyu.MainFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ffda68"
+        android:id="@+id/relativeLayout">
+        <RelativeLayout
+            android:layout_width="280dp"
+            android:layout_height="30dp"
+            android:background="@drawable/title_search_bg"
+            android:id="@+id/btn_search"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请输入宝贝关键字或@用户名"
+            android:id="@+id/textView6"
+            android:textSize="10sp"
+            android:layout_gravity="center"
+            android:background="@android:color/white"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/darker_gray"
+            />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:id="@+id/imageView"
+                android:src="@drawable/title_search"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/textView6"
+                android:layout_toStartOf="@+id/textView6"
+                android:layout_marginRight="5dp"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/btn_search"
+            android:layout_toStartOf="@+id/btn_search">
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/imageView2"
+                android:src="@drawable/bar_code_scan_icon"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btn_search"
+            android:layout_toEndOf="@+id/btn_search"
+            android:id="@+id/btn_cate">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/imageView3"
+                android:src="@drawable/category"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.pjt.xianyu.ReFlashListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_listview"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:dividerHeight="0dp"
+
+        />
+
+
+</RelativeLayout>
